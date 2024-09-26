@@ -8,4 +8,18 @@ public class Doctor extends Person {
 		super(name, surname);
 		this.specialization = specialization;
 	}
+
+	public String getSpecialization() {
+		return specialization;
+	}
+
+	public void setSpecialization(String specialization) {
+		this.specialization = specialization;
+	}
+
+	@Override
+	public void getDetails() {
+		super.getDetails();
+		System.out.println(this.getSpecialization());
+	}
 }
